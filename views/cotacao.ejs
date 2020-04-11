@@ -1,0 +1,16 @@
+<%- include('header') %>
+<div class="result">
+    <% if(error){ %>
+        <%= error %>
+    <% }else{ %>
+   <p>Cotação do Dólar: <%= cotacao %></p>
+    <p>Quantidade BRL: <%= quantidade %></p>
+    <p>Valor convertido: <strong>R$<%= conversao %></strong></p>
+    <% } %>
+</div>
+<form action="/">
+    <button id="botao-voltar">Voltar</button>
+</form>
+
+
+<%- include('footer') %>
